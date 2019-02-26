@@ -31,11 +31,11 @@ $(document).ready(function() {
 	$('#update').click(function() {
 		$.each(people, function(i, person) {
 			if ($.inArray(person, uniquePeople) === -1) {
-				uniquNames.push(person);
+				uniquePeople.push(person);
 			}
 		});
 		for (var i = 0; i < people.length; i++) {
-			$('#status').append('<div><img src='+buildUrl(people[i])+'></div>');
+			$('#status').append('<div><img src='+buildUrl(uniquePeople[i])+'></div>');
 		}
   });
 });
