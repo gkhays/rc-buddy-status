@@ -1,6 +1,7 @@
 var path = '/api/v1/shield.svg?type=user&username=';
 
 var people = [];
+var uniquePeople = [];
 
 function buildUrl(name) {
   return 'https://' + $('#host').val() + path + name;
@@ -20,14 +21,21 @@ $('#host').keyup(function(event) {
 
 $(document).ready(function() {
 	$('#buddy').focus();
+	
 	$('#add').click(function() {
-  	people.push($('#buddy').val());
-    $('#buddy').val('');
-    $('#buddy').focus();
-  });
+		people.push($('#buddy').val());
+		$('#buddy').val('');
+		$('#buddy').focus();
+  	});
+	
 	$('#update').click(function() {
-    for (var i = 0; i < people.length; i++) {
-    	$('#status').append('<div><img src='+buildUrl(people[i])+'></div>');
-  	}
+		$.each(people, function(i, person) {
+			if ($.inArray(person, uniquePeople) === -1) {
+				uniquNames.push(person);
+			}
+		});
+		for (var i = 0; i < people.length; i++) {
+			$('#status').append('<div><img src='+buildUrl(people[i])+'></div>');
+		}
   });
 });
