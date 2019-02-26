@@ -4,7 +4,7 @@ h2 {
 
 body {
   font-family: sans-serif;
-  font-size: 80%;
+  font-size: 100%;
 }
 
 input {
@@ -13,4 +13,8 @@ input {
 
 #status {
   margin-top: 10px;
+}
+
+footer {
+  font-size: 50%;
 }
