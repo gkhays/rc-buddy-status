@@ -14,36 +14,32 @@
 <h2>Rocket.Chat Status</h2>
 
 <!-- Hamburger menu -->
-<!-- Put this back in when it's working...
 <nav class="navbar navbar-inberse navbar-static-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
       </button>
     </div>
     
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div id="buddies">
+          <label for="buddy">Buddy:</label>
+          <input type="text" id="buddy">
+          <button id="add">Add</button>
+        </div>
         <div id="connect">
-            <label for="host">Server:</label>
-            <input type="text" id="host" placeholder="chat.rocket.net">
-            <button id="update">Save</button>
+          <label for="host">Server:</label>
+          <input type="text" id="host" placeholder="chat.rocket.net">
+          <button id="update">Update</button>
         </div>
     </div>
   </div>
 </nav>
--->
-
-<div id="buddies">
-  <label for="buddy">Buddy:</label>
-  <input type="text" id="buddy">
-  <button id="add">Add</button>
-</div>
-<div id="connect">
-  <label for="host">Server:</label>
-  <input type="text" id="host" placeholder="chat.rocket.net">
-  <button id="update">Update</button>
-</div>
 
 <div id="status">
 </div>
