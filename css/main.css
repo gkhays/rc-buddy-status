@@ -18,3 +18,7 @@ input {
 footer {
   font-size: 70%;
 }
+
+.hidden-button {
+    width: 5em;
+}
