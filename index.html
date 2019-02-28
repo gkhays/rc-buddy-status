@@ -3,25 +3,39 @@
 <head>
   <title>Rocket.Chat Buddy Status</title>
   
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  <script src="js/vanilla.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/vanilla.js"></script>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">  
 </head>
 
-<h2>Rocket.Chat Status</h2>
-
-<div id="buddies">
-  <label for="buddy">Buddy:</label>
-  <input type="text" id="buddy">
-  <button id="add">Add</button>
+<!-- Hamburger menu -->
+<div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <h5 class="text-white h4">Rocket.Chat Server and Contacts</h5>      
+      <div id="connect">
+        <label for="host" class="text-muted">Server:</label>
+        <input type="text" id="host" placeholder="chat.rocket.net">
+      </div>
+      <div id="buddies">
+        <label for="buddy" class="text-muted">Buddy:</label>
+        <input type="text" id="buddy">
+        <button id="add" class="hidden-button">Add</button>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-primary">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <span class="text-white">Friends</span>
+  </nav>
 </div>
-<div id="connect">
-  <label for="host">Server:</label>
-  <input type="text" id="host" placeholder="chat.rocket.net">
-  <button id="update">Update</button>
-</div>
-
-<div id="status">
-</div>
+    
+<div id="status"></div>
 
 <p>
   Above, I can use the SVG badges as image sources and produce a status list.

@@ -1,20 +1,7 @@
-h2 {
-  font-family: helvetica;
-}
-
-body {
-  font-family: sans-serif;
-  font-size: 100%;
-}
-
-input {
-  margin-bottom: 5px;
-}
-
-#status {
-  margin-top: 10px;
-}
-
 footer {
-  font-size: 50%;
+  font-size: 70%;
+}
+
+.hidden-button {
+    width: 5em;
 }
