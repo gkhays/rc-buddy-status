@@ -6,6 +6,8 @@ A quick proof-of-concept project to provide online status of Rocket.Chat buddies
 
 The project has been set up as a [GitHub Project Page](https://help.github.com/en/articles/user-organization-and-project-pages) so it is easy to see how it works; see https://gkhays.github.io/rc-buddy-status/.
 
+Click on the "hamburger" menu to add a Rocket.Chat server and buddies.
+
 ## Built With
 
 * [jQuery](https://jquery.com/)
