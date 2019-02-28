@@ -7,13 +7,13 @@ function buildUrl(name) {
 	return 'https://' + $('#host').val() + path + name;
 }
 
-$('#buddy').keyup(function(event) {
-	if (event.keyCode === 13) {
-  	$('#add').click();
-  }
-});
-
 $(document).ready(function() {
+	$('#buddy').keyup(function(event) {
+		if (event.keyCode === 13) {
+		$('#add').click();
+	  }
+	});
+	
 	$('#add').click(function() {
 		people.push($('#buddy').val());
 		
